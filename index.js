@@ -10,7 +10,7 @@ dayNumber = Number(dayNumber.toString().replace('day', ''));
 
 let inputData = null;
 try {
-  inputData = fs.readFileSync(`${__dirname}/day${dayNumber}/input`)?.toString() || '';
+  inputData = fs.readFileSync(`${__dirname}/day${dayNumber}/input.txt`)?.toString() || '';
   if (!inputData?.length) {
     throw new Error();
   }
